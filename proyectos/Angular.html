@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular - Proyectos</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../scripts/lightbox.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Cristopher Antonio Aquino Miranda</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h2>Proyectos basicos con Angular – Capturas del proyecto</h2>
+  <div class="galeria">
+    <img src="../images/angular/MovieApp.png" alt="MovieApp" onclick="openLightbox(0)">
+    <img src="../images/angular/LibrosAPP.png" alt="LibrosAPP" onclick="openLightbox(1)">
+    <img src="../images/angular/Tectoons.png" alt="Tectoons" onclick="openLightbox(2)" style="height: 300px; width: 500px;">
+    <img src="../images/angular/Conversor.png" alt="Conversor" onclick="openLightbox(3)" style="height: 300px; width: 500px;">
+  </div>
+
+  <section id="informacion">
+    <h2>Información</h2>
+    <p>Apps muy basicas, mas de muestra, desarrolladas con Ionic y Angular.</p>
+    <p class="tech">Tecnologías: Angular, Ionic</p>
+    
+    <p>📄 <a href="https://github.com/CristopherAquino/Proyectos-Ionic-angular" target="_blank" style="color: red;">Codigo  - Github</a></p>
+
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+  
+  <script src="../scripts/lightbox.js"></script>
+</body>
+</html>

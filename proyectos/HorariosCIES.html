@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horarios CIES - Proyecto</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../scripts/lightbox.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Cristopher Antonio Aquino Miranda</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h2>Horarios CIES – Capturas del proyecto</h2>
+  <div class="galeria">
+    <img src="../images/horarioscies/horarios carrera.png" alt="Horarios CIES 1" onclick="openLightbox(0)">
+    <img src="../images/horarioscies/horarios materia.png" alt="Horarios CIES 2" onclick="openLightbox(1)">
+    <img src="../images/horarioscies/horarios ciclo.png" alt="Horarios CIES 3" onclick="openLightbox(2)">
+    <img src="../images/horarioscies/horarios crear doc.png" alt="Horarios CIES 4" onclick="openLightbox(3)">
+    <img src="../images/horarioscies/horarios crear grupo.png" alt="Horarios CIES 5" onclick="openLightbox(4)">
+    <img src="../images/horarioscies/horarios pdf.png" alt="Horarios CIES 6" onclick="openLightbox(5)">
+  </div>
+
+  <section id="informacion">
+    <h2>Información</h2>
+    <p>Aplicación de escritorio desarrollada bajo arquitectura MVC (Modelo-Vista-Controlador) que permite generar horarios escolares 
+      personalizados para docentes. Utiliza SQLite como motor de base de datos y se conecta mediante Entity Framework, lo que facilita el manejo de datos con clases y consultas LINQ, ideal para entornos sin infraestructura de servidor. 
+      El sistema permite registrar carreras, grupos, materias, docentes y ciclos escolares, y genera automáticamente una vista estructurada del horario, la cual puede ser exportada en formato PDF para su impresión o distribución.</p>
+    <p class="tech">Tecnologías: C#, .NET, Entity Framework, SQLite, PDFSharp, MVC</p>
+
+    
+    <p>📄 <a href="https://github.com/CristopherAquino/Horarios_CIES" target="_blank" style="color: red;">Codigo  - Github</a></p>
+
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+  
+  <script src="../scripts/lightbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gameclicker - Proyecto</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../scripts/lightbox.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Cristopher Antonio Aquino Miranda</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h2>Gameclicker – Capturas del proyecto</h2>
+  <div class="galeria">
+    <img src="../images/gameclicker/gameclicker rss.png" alt="GameClicker 1" onclick="openLightbox(0)" style="width: 180px; height: 400px;">
+    <img src="../images/gameclicker/gameclicker upg.png" alt="GameClicker 2" onclick="openLightbox(1)" style="width: 180px; height: 400px;">
+    <img src="../images/gameclicker/gameclicker pot.png" alt="GameClicker 3" onclick="openLightbox(2)" style="width: 180px; height: 400px;">
+    <img src="../images/gameclicker/gameclicker batt.png" alt="GameClicker 4" onclick="openLightbox(3)" style="width: 180px; height: 400px;">
+    <img src="../images/gameclicker/gameclicker batt atk.png" alt="GameClicker 5" onclick="openLightbox(4)" style="width: 180px; height: 400px;">
+    <img src="../images/gameclicker/gameclicker skills.png" alt="GameClicker 6" onclick="openLightbox(5)" style="width: 180px; height: 400px;">
+  </div>
+
+  <section id="informacion">
+    <h2>Información</h2>
+    <p><strong>GameClicker</strong> — Desarrollado en Unity 2D para Android. En proceso de diseño visual y mecánicas básicas.</p>
+
+    <p>El juego utiliza una arquitectura en 3 capas para mantener un código limpio y escalable, y cuenta con un estilo visual en pixel art. Actualmente se están desarrollando sistemas clave como:</p>
+    
+    <ul>
+      <li>🌳 Generación activa y pasiva de recursos.</li>
+      <li>⚔️ Sistema de batallas por turnos.</li>
+      <li>🧠 Habilidades desbloqueables según el nivel del jugador.</li>
+      <li>📱 Adaptado a formato vertical (9:20) para dispositivos móviles.</li>
+    </ul>
+    
+    <p>Este proyecto me ha permitido aplicar buenas prácticas de desarrollo en Unity y C#, enfocándome en la organización del código, mecánicas incrementales y diseño visual retro mejor conocido como pixelArt.</p>
+    
+    <p class="tech">Tecnologías: Unity, C#, Arquitectura en 3 capas, Pixel Art</p>
+    
+    
+    <p>📄 <a href="https://github.com/CristopherAquino/GameClicker" target="_blank" style="color: red;">Codigo  - Github</a></p>
+
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+  
+  <script src="../scripts/lightbox.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geolocalizador - Proyecto</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../scripts/lightbox.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Cristopher Antonio Aquino Miranda</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h2 style="text-align:center">Geolocalizador – Capturas del proyecto</h2>
+  <div class="galeria">
+    <img src="../images/geolocalizador/geo pc view.png" alt="Geolocalizador 1" onclick="openLightbox(0)">
+    <img src="../images/geolocalizador/Geolocalizador.png" alt="Geolocalizador 2" onclick="openLightbox(1)">
+  </div>
+
+  <section id="informacion">
+    <h2>Información</h2>
+    <p>App móvil desarrollada con Ionic y Angular que muestra la ubicación actual del usuario usando Google Maps API. También disponible como APK.</p>
+    <p class="tech">Tecnologías: Angular, Ionic, Google Maps API</p>
+    
+    <p>📄 <a href="https://github.com/CristopherAquino/Proyectos-Ionic-angular/blob/master/Geolocalizador.rar" target="_blank" style="color: red;">Codigo  - Github</a></p>
+
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+  
+  <script src="../scripts/lightbox.js"></script>
+</body>
+</html>

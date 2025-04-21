@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QFACTURE - Proyecto</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../scripts/lightbox.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Cristopher Antonio Aquino Miranda</h1>
+      <ul class="nav-links">
+        <li><a href="../index.html">Inicio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h2>QFACTURE – Capturas del proyecto</h2>
+  <div class="galeria">
+      <img src="../images/qfacture/qfacture login.png" alt="Qfacture 1" onclick="openLightbox(0)">
+      <img src="../images/qfacture/qfacture registro.png" alt="Qfacture 2" style="height: 300px;" onclick="openLightbox(1)">
+      <img src="../images/qfacture/qfacture capturar.png" alt="Qfacture 3" onclick="openLightbox(2)">
+      <img src="../images/qfacture/qfacture buscar.png" alt="Qfacture 4" onclick="openLightbox(3)">
+      <img src="../images/qfacture/qfacture infou.png" alt="Qfacture 5" onclick="openLightbox(4)">
+      <img src="../images/qfacture/qfacture pdf.png" alt="Qfacture 6" onclick="openLightbox(5)">
+  </div>
+
+  <section id="informacion">
+    <h2>Información</h2>
+    <p>Sistema de facturación en .NET que permite emitir facturas, conectarse a Microsoft SQL Server y exportarlas en PDF.</p>
+    <p class="tech">Tecnologías: C#, .NET, Microsoft SQL Server, iTextSharp</p>
+    
+    <p>📄 <a href="https://github.com/CristopherAquino/QFacture" target="_blank" style="color: red;">Codigo  - Github</a></p>
+
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+  
+  <script src="../scripts/lightbox.js"></script>
+</body>
+</html>
